@@ -14,6 +14,10 @@ app.get('/drinks/', (req,res) => {
     })
 })
 
+app.get('/drinks/:id', (req,res) => {
+    res.send(req.params.id)
+})
+
 
 
 app.listen(port, () => {
