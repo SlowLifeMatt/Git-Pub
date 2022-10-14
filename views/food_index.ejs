@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Git Pub App</title>
+  </head>
+  <body>
+    <style>
+        body {
+            color: blanchedalmond;
+            background-color: steelblue;
+            text-transform: capitalize;
+        }
+    </style>
+    <h1>Welcome to Git Pub</h1>
+    <ul>
+        <% for(let i =0; i < allFood.length; i++){ %>
+        <li>
+            <a href="/food/<%=i %>"> <%= allFood[i].name %></a>
+        </li>
+        <% } %>
+    </ul>
+  </body>
+</html>
